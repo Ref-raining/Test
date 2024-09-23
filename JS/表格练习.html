@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+        content="width=device-width,
+                initial-scale=1.0">
+    <title>表格练习</title>
+
+    <style>
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th{
+            background-color: grey;
+        }
+        th, td{
+            border: 1px solid grey;
+            text-align: center;
+            padding: 8px;
+        }
+        button{
+            margin-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">表格增删</h1>
+    <div style="text-align: center;">
+        <button onclick="addRow()">新建</button>
+    </div>
+    
+    <table id="table">
+        <tr>
+            <th>姓名</th>
+            <th>学号</th>
+            <th>手机</th>
+            <th>操作</th>
+        </tr>
+        <tr>
+            <td>你大爷</td>
+            <td></td>
+            <td></td>
+            <td>
+                <button onclick="editRow(this)">编辑</button><button onclick="deleteRow(this)">删除</button>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+<script src="./表格练习.js"></script>
+
+</html>

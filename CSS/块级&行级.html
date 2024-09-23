@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .block{
+            background-color: grey;
+            width: 400px;
+            height: 200px;
+        }
+        .inline{
+            background-color: chocolate;
+            /* 行内元素没有宽高 */
+        }
+        .inline-block{ 
+            width: 100px;
+            height: 150px;
+       }
+
+       .div-line{
+            display: inline;
+            background-color: coral;
+            width: 400px;
+            height: 200px;
+       }
+
+       .span-block{
+            display: inline-block;
+            background-color: indianred;
+            width: 400px;
+            height: 200px;
+       }
+
+
+    </style>
+</head>
+
+<body>
+    <h1 style="font: bolder 40px 'kaiti' ">复合属性示例</h1>
+    <p style="line-height: 30px;">
+        长文本长文本长文本长文本长文本长文本长文本长文本
+        长文本长文本长文本长文本长文本长文本长文本长文本
+        长文本长文本长文本长文本长文本长文本长文本长文本
+        长文本长文本长文本长文本长文本长文本长文本长文本
+    </p>
+
+    <div class="block">块级元素</div>
+    <br>
+    <span class="inline">行内元素</span>
+    <br>
+    <img src="./小八发毛.jpg" alt="" class="inline-block">
+    <img src="./小八发毛.jpg" alt="" class="inline-block">
+    <img src="./小八发毛.jpg" alt="" class="inline-block">
+
+    <br><br>
+    <h2>元素转化display</h2>
+    <div class="div-line">div转化为行内快</div>
+    <br><br>
+    <span class="span-block">span转化为行内快</span>
+
+</body>
+</html>  

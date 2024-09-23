@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wIDth=device-wIDth, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 元素选择器 */
+        h2{
+            color: brown;
+        }
+        /* 类选择器 */
+        .flag01{
+            color: orangered;
+        }
+        .flag02{
+            color: burlywood;
+        }
+        /* id选择器 */
+        #header{
+            /* color: seagreen; */
+            font-size: 36px;
+        }
+        /* 通用选择器 */
+        *{
+            font-family: 'kaiti';
+        }
+        /* 子元素选择器 */
+        .father > .son{
+            color: gray;
+            font-weight: bolder;
+        }
+        /* 后代选择器 */
+        .father p{
+            color: olive;
+        }
+        /* 相邻元素选择器 */
+        /* 伪类选择器 */
+        #element:hover{
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 class="flag01">CSS选择器</h1> 
+        <h2 class="flag02">类选择器</h2>
+        <h2>非类选择器</h2>
+
+        <h4 id="header">ID选择器01</h4>
+        <h4 id="header" class="flag02">ID选择器02</h4>
+        <h4 class="flag02" id="header">ID选择器03</h4>
+
+        <h3 id="element">伪选择器（和鼠标交互）</h3>
+    </div>
+
+    <div class="father" style="text-align: center;">
+        <p class="son">子元素选择器</p>
+        <div>
+            <p class="grandson">孙子元素选择器</p>
+        </div>
+    </div>
+
+
+</body>
+</html>

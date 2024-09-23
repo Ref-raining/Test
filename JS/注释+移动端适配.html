@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- viewport显示效果
+    以下只对移动设备生效：
+        device-width随设备比例显示
+        initial-scale初始缩放比例
+        minimum-scale最小缩放比例
+        maximum-scale最大缩放比例
+        user-scalable能否缩放-->
+    <meta name="viewport" 
+        content="width = device-width,
+                initial-scale = 1.0,
+                minimum-scale = 1.0,
+                maximum-scale = 2.0,
+                user-scalable = yes">
+    <title>meta&移动端适配</title>
+
+    <style>
+        /* .html{
+            font-size: 20px;
+        } */
+        .box-px{
+            width: 300px;
+            height: 100px;
+            background-color: blueviolet;
+            margin-bottom: 50px;
+        }
+        .box-rem{
+            width: 5rem;
+            height: 3rem;
+            background-color: orchid;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box-px"></div>
+    <div class="box-rem"></div>
+</body>
+
+<script>
+    //根据设备宽度计算HTML标签font-size的属性值
+    function getFontSize()
+    {
+        document.documentElement.style.fontSize = screen.width/10 + 'px';
+    }
+    getFontSize();
+
+    //绑定屏幕尺寸变化事件
+    window.onresize = getFontSize;
+</script>
+
+</html>
